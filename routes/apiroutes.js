@@ -26,5 +26,7 @@ router.post('/api/notes',(req,res)=>{
       console.log("Note has been added.");
     });
     res.json(notesData);
-  })
-})
+  });
+});
+
+module.exports = app;
