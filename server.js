@@ -1,7 +1,7 @@
 //Import packages
 const express = require('express');
 const app = express();
-const htmlRoutes = require('./routes/htmlRoutes');
+const htmlRoutes = require('./routes/htmlroutes');
 const apiRoutes = require('./routes/apiroutes');
 const PORT = process.env.PORT || 3001;
 
