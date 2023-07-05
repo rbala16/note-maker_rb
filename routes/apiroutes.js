@@ -29,4 +29,4 @@ router.post('/api/notes',(req,res)=>{
   });
 });
 
-module.exports = app;
+module.exports = router;
