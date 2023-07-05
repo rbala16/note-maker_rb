@@ -1,12 +1,12 @@
 const fs = require('fs');
 const util = require('util');
-const router = require('express').Router();
+const app = require('express').Router();
 const writeFileAsync = util.promisify(fs.writeFile);
 const readFileAsync = util.promisify(fs.readFile);
 var notesData;
 
 //GET REQUEST
-router.get('api/notes',(req,res)=>{
+app.get('/notes',(req,res)=>{
   readFileAsync('db/db.json','utf8').then(function(data){
     notesData = JSON.parse(data);
     res.json(notesData);
@@ -15,7 +15,7 @@ router.get('api/notes',(req,res)=>{
 });
 
 //POST REQUEST
-router.post('/api/notes',(req,res)=>{
+app.post('/notes',(req,res)=>{
   readFileAsync('db/db.json','utf8').then(function(data){
     notesData = JSON.parse(data);
     let createNewnote = req.body;
@@ -29,4 +29,4 @@ router.post('/api/notes',(req,res)=>{
   });
 });
 
-module.exports = router;
+module.exports = app;
