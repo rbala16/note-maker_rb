@@ -56,12 +56,12 @@ MIT License
 
 The following images show the web application's appearance and functionality:
 <br>
-<img src="demo" alt =./demo/example.jpg>
-<img src="heroku" alt =./demo/heroku_deployed_eg.jpg>
+<img alt="demo" src ="./demo/example.jpg">
+<img alt="heroku" src ="./demo/heroku_deployed_eg.jpg">
 <br>
 
 * A walkthrough video demonstrating the functionality of the application.
-![alt demo](./demo/demo.gif.)
+![alt demo](./demo/demo.gif)
 <br>
 
 The full movie file showing functionality of the application can be found here <br>
